@@ -1,5 +1,8 @@
+import { useState } from "react";
 import { twMerge } from "tailwind-merge";
-
+import { FaPlus } from "react-icons/fa6";
+import { IoCloseSharp } from "react-icons/io5";
+import { AnimatePresence,motion } from "motion/react";
 const faqs = [
     {
         question: "How is Layers different from other design tools?",
@@ -23,7 +26,8 @@ const faqs = [
     },
 ];
 export function Faq(){
-    const selectedIndex=0;
+    const [selectedIndex,setSelectedIndex]=useState(-2)
+    const index=9
     return (
         <div className="container mt-26">
             <div className="flex justify-center">
@@ -39,18 +43,43 @@ export function Faq(){
             <div className=" mt-10 flex flex-col items-center justify-center gap-2  ">
                     {faqs.map((f,fi)=>
                         <div id={f.question} className="bg-neutral-900 pt-4 border-1 border-white/20  pb-4 px-5 lg:w-[500px]  md:w-[450px] w-[310px]   rounded-2xl flex-col text-white">
-                            <div className=" flex justify-between gap-2 items-center "> 
-                                <div className="text-white/100 ">
+                            <div className=" flex justify-between gap-2 items-center  " onClick={()=>setSelectedIndex(fi)}> 
+                                <div  onClick={()=>setSelectedIndex(fi)} className="text-white/100  ">
                                     {f.question}
                                 </div>
-                                <svg xmlns="http://www.w3.org/2000/svg" x="5px" y="5px" width="28" height="18" viewBox="0,0,256,256">
-<g fill="#ffffff" fill-rule="evenodd" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" className={twMerge("mix-blend-mode: normal",selectedIndex === fi && 'rotate-45')}><g transform="scale(10.66667,10.66667)"><path d="M11,2v9h-9v2h9v9h2v-9h9v-2h-9v-9z"></path></g></g>
-</svg>
-                            </div>
+                              <div  >
+                             { selectedIndex !== fi ? <FaPlus />: <div onClick={()=>{
+                                setSelectedIndex(0)
+                             }}>  < IoCloseSharp /> </div>
 
-                            <div className={twMerge ("pb-2 text-white/70 mt-4 text-justify",selectedIndex !==fi && 'hidden')}>
-                                {f.answer}
+                             
+                             } 
+
+                              </div>
                             </div>
+                            <AnimatePresence>
+
+                                 { 
+                                    selectedIndex === fi &&
+                                            <motion.div
+                                            initial={{height:0,
+                                                marginTop:0
+                                            }}
+                                            animate={{height:"auto",
+                                                marginTop:24
+                                            }}
+                                            transition={{
+                                                ease:"easeInOut",
+                                                duration:0.7
+                                            }}
+                                            exit={{height:0,
+                                                marginTop:0}}
+                                            
+                                            className={twMerge (" overflow-hidden  text-white/70  text-justify",)}>
+                                            {f.answer}
+                                            </motion.div>
+                                }
+                            </AnimatePresence>
                         </div>
                     )}
             </div>

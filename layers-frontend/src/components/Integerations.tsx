@@ -22,7 +22,7 @@ export default function  Integerations(){
             <div className="flex flex-col justify-center lg:items-start items-center " >
             <div className="border-[#BCE954]  w-52 uppercase px-2 py-1 rounded-3xl text-white border-2 ">
              
-             <div className="text-[#BCE954] ">inroduction layers</div>
+             <div className="text-[#BCE954] text-center ">inroduction layers</div>
          </div>
             <div className="text-white lg:text-start text-center text-5xl lg:text-7xl   mt-8">
             Plays with well <span className="text-[#BCE954]">others</span>
@@ -34,7 +34,7 @@ export default function  Integerations(){
             <div>
                 <div className="  flex justify-center  gap-3 lg:h-[700px] h-[400px]  overflow-hidden" style={{ maskImage: "linear-gradient(to bottom, transparent, black 10%, black 90%, transparent)" }}>
                   <Integerationcols integerations={integrations} />
-                  <Integerationcols integerations={integrations.slice().reverse()}  className="hidden md:block"/>
+                  <Integerationcols reverse={true} integerations={integrations.slice().reverse()}  className="hidden  md:flex"/>
                 </div>
             </div>
         </div>

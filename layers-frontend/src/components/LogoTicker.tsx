@@ -6,7 +6,8 @@ import outsideLogo from "../assets/outside.svg";
 import apexLogo from "../assets/apex.svg";
 import celestialLogo from "../assets/celestial.svg";
 import twiceLogo from "../assets/twice.svg";
-
+import {motion} from "motion/react"
+import { Fragment } from "react";
 const logos = [
     { name: "Quantum", image: quantumLogo },
     { name: "Acme Corp", image: acmeLogo },
@@ -23,14 +24,37 @@ export function LogoTicker(){
 <div className="text-white/60 text-center">
 Already Choose by these market leaders
 </div>
-<div className="overflow-hidden mt-12" style={{ maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)" }}>
+<div className=" flex overflow-hidden mt-12" style={{ maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)" }}>
 
 
-    <div className=" flex gap-24 pr-24 ">
-    {logos.map(logo=>
-                <img src={logo.image} key={logo.name}/>
-            )}
-    </div>
+    <motion.div 
+    animate={{
+        x:"-50%"
+    }}
+    transition={{
+        duration:25,
+     
+        ease:"linear",
+        repeat:Infinity
+    }}
+    
+    className=" flex  flex-none gap-24 pr-24 ">
+    
+    {
+        Array.from({length:2}).map((_,i)=>(
+            <Fragment key={i}>
+                {
+logos.map((logo)=> (
+    <img src={logo.image} key={logo.name}/>
+)
+               
+            )
+                }
+
+            </Fragment>
+        ))
+}
+    </motion.div>
            
 </div>
         </div>
