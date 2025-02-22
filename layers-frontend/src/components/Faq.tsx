@@ -27,7 +27,7 @@ const faqs = [
 ];
 export function Faq(){
     const [selectedIndex,setSelectedIndex]=useState(-2)
-    const index=9
+    
     return (
         <div className="container mt-26">
             <div className="flex justify-center">
