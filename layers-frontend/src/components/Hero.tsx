@@ -61,7 +61,7 @@ export function Hero(){
         $5.7 seed round raised
         </div>
         <div className="lg:text-7xl text-5xl md:text-6xl text-center  ">
-        Impactful Design, created effortlessly
+        Impactful Design, Created Effortlessly
         </div>
         <div className="text-center mt-4 text-white/60   pt-2">
         Design tool should not slow y ou down. Layers combine powerfull features with an intuitive interface that keeps you in your creative flow.

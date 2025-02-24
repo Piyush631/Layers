@@ -19,7 +19,7 @@ const features = [
 
 export function Features(){
     return (
-        <div className="text-white py-24">
+        <div id="features" className="text-white py-24">
             <div className=" flex justify-center">
              
              <div className="text-[#BCE954] border-[#BCE954] px-4 py-1 rounded-3xl uppercase  text-center border-1">

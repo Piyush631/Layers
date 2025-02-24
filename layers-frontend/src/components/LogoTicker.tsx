@@ -22,7 +22,7 @@ export function LogoTicker(){
     return (
         <div className="container overflow-x-clip py-28">
 <div className="text-white/60 text-center">
-Already Choose by these market leaders
+Already choose by these market leaders
 </div>
 <div className=" flex overflow-hidden mt-12" style={{ maskImage: "linear-gradient(to right, transparent, black 10%, black 90%, transparent)" }}>
 
@@ -38,7 +38,7 @@ Already Choose by these market leaders
         repeat:Infinity
     }}
     
-    className=" flex  flex-none gap-24 pr-24 ">
+    className=" flex    flex-none gap-24 pr-24 ">
     
     {
         Array.from({length:2}).map((_,i)=>(

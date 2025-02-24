@@ -25,7 +25,7 @@ export function Tryit(){
             }
     },[isHovered])
     return (
-        <section className="mt-20">
+        <section className="mt-20 overflow-x-clip">
             <motion.div ref={scope} className="mx-auto p-4 flex "
             onMouseEnter={()=>{
                 setIsHovered(true)

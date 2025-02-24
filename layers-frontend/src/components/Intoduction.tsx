@@ -16,19 +16,19 @@ export default function Introduction() {
     useEffect(()=>{
 wordIndex.on('change',(latest)=>setCurrentWord(latest))
     },[wordIndex])
-    return <section className="py-20 flex justify-center " >
-        <div className=" ">
+    return <section className="py-20  " >
+        
 
         <div className="sticky top-20 md:top-28 lg:top-44">
 
   
         <div className="flex justify-center">
-            <div className="border-[#BCE954] mt-8 uppercase px-2 py-1 rounded-3xl text-white border-2 ">
+            <div className="border-[#BCE954] mt-8 uppercase px-4 py-1 rounded-3xl text-white border-2 ">
              
                 <span className="text-[#BCE954]">inroduction layers</span>
             </div>
         </div>
-        <div className="pt-20 text-4xl md:text-5xl lg:text-6xl text-center px-11">
+        <div className="pt-20 text-4xl md:text-5xl lg:text-[55px] text-center px-11">
             <span className="text-white">Your creative process deserves better.</span>
             <span className="text-white/40">{words.map((word,wordIndex)=>
             <span key={wordIndex} className={twMerge("transition duration-500 ease-in-out",wordIndex < currentWord && "text-white")}>{word}{" "}</span>
@@ -38,8 +38,8 @@ wordIndex.on('change',(latest)=>setCurrentWord(latest))
         
         </div>
       
-        </div>
-        <div  ref={scrollTarget} className="h-[240vh]  ">
+       
+        <div  ref={scrollTarget} className="h-[260vh] ">
 
 </div>
         </section >
