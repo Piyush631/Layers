@@ -27,12 +27,12 @@ export function Features(){
                 
                 </div>
          </div>
-            <div className="flex justify-center">
+            <div className="flex mt-8 justify-center">
                <div className="lg:text-8xl md:text-7xl text-5xl px-24 text-center">
                When power meets <span className="text-[#aee62d]">simplicity</span>
                 </div> 
             </div>
-            <div className="flex flex-wrap gap-4 justify-center mt-12">
+            <div className="flex flex-wrap gap-4 justify-center mt-14">
                 <Cards   className="group " title="Real time Collaboration" description="work together sameless with conflict free team editing">
 <div className="  flex py-4  ">
     <div className=" z-100  rounded-full border-4 border-blue-700">

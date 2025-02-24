@@ -39,7 +39,7 @@ wordIndex.on('change',(latest)=>setCurrentWord(latest))
         </div>
       
        
-        <div  ref={scrollTarget} className="h-[260vh] ">
+        <div  ref={scrollTarget} className="h-[220vh] md:h-[250vh]  ">
 
 </div>
         </section >

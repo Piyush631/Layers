@@ -3,7 +3,7 @@ import { MdMenu } from "react-icons/md";
 import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 import { AnimatePresence,motion } from "motion/react";
-import { Link } from "react-router-dom";
+
 const navLinks=[
     
         {lable:"home",href:"#"},
@@ -59,7 +59,7 @@ export function Header(){
                 {
                 navLinks.map((link)=>(
                   
-                    <Link to={link.href}>{link.lable}</Link>
+                    <a href={link.href}>{link.lable}</a>
                 ))
             }
                 </div>

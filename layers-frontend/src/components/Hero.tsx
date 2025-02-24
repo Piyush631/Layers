@@ -68,7 +68,7 @@ export function Hero(){
         </div>
         <div className="flex border-1 mt-10  rounded-3xl p-1 border-white/70  ">
 <input type="text" className="flex-1  lg:w-72 md:w-64 w-56  rounded-3xl p-2" placeholder="Enter your email"></input>
-<button className="bg-[#A3E635] text-black  rounded-3xl h-9 px-5">Sign Up</button>
+<button className="bg-[#A3E635] text-black text-sm md:text-lg  rounded-3xl h-9 px-5 ">Sign Up</button>
 
         </div>
        </div>
