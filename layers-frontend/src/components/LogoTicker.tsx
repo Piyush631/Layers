@@ -20,7 +20,7 @@ const logos = [
 ];
 export function LogoTicker(){
     return (
-        <div className="container overflow-x-clip py-28">
+        <div className="  container overflow-x-clip py-28">
 <div className="text-white/60 text-center">
 Already choose by these market leaders
 </div>

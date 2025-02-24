@@ -36,8 +36,8 @@ export function Hero(){
             right:1200,
             bottom:350
         }}
-        className="absolute  top-40  -left-20 hidden  lg:block h-96">
-        <img  className="h-full object-cover" draggable="false"  src={leftiamge}/>
+        className="absolute  z-100 top-40  -left-20 hidden  lg:block h-96">
+        <img  className="h-full object-cover " draggable="false"  src={leftiamge}/>
         </motion.div>
         <motion.div 
             ref={rightImageScope}
@@ -52,7 +52,7 @@ export function Hero(){
                right:30,
                bottom:350
             }}
-        className="absolute  top-40 -right-20 hidden lg:block h-96"> 
+        className="absolute   z-100 top-40 -right-20 hidden lg:block h-96"> 
                 <img src={rightimage} className="h-full object-cover"  draggable="false"  /> 
             </motion.div>
        <div className="w-1/2 mt-24 bg-black flex flex-col gap-3 items-center text-white ">
