@@ -67,8 +67,8 @@ export function Hero(){
         Design tool should not slow you down. Layers combine powerfull features with an intuitive interface that keeps you in your creative flow.
         </div>
         <div className="flex border-1 mt-10  rounded-3xl p-1 border-white/70  ">
-<input type="text" className="flex-1  lg:w-72 md:w-64 w-56  rounded-3xl p-2" placeholder="Enter your email"></input>
-<button className="bg-[#A3E635] text-black text-xs md:text-lg  rounded-3xl h-9 px-5 ">Sign Up</button>
+<input type="text" className="flex-1  lg:w-72 md:w-64 w-52  rounded-3xl p-2" placeholder="Enter your email"></input>
+<button className="bg-[#A3E635] text-black text-xs md:text-lg  rounded-3xl md:w-28 w-24  h-9 px-5 ">Sign Up</button>
 
         </div>
        </div>
