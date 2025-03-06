@@ -6,7 +6,7 @@ import { AnimatePresence,motion } from "motion/react";
 
 const navLinks=[
     
-        {lable:"home",href:"#"},
+        {lable:"Home",href:"#"},
         {lable:"Features",href:"#features-id"},
         {lable:"Integeration",href:"integeration"},
         {lable:"FAQs",href:"faq"},
